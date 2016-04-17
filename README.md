@@ -6,7 +6,7 @@ The development environment is Ubuntu 14.04 LTS (Trusty) 64 bits.
 
 ## Directory Layout
 
-1. Any directory shoule contain a README.md file, which is written in markdown format. The benifit is that it will be rendered by github on the website. Also git will not trace a empty directory.
+1. Any directory shoule contain a README.md file, which is written in markdown format. The benifit is that it will be rendered by github on the website. Also git will not trace an empty directory.
 
 ## Licence
 
