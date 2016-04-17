@@ -4,10 +4,17 @@
 
 # If you ubuntu is unable to install following software, please visit 
 # https://repogen.simplylinux.ch/ to generate a sources.list
+
+set -x
 # update apt-get
 sudo apt-get update
+INSTALL_CMD="sudo apt-get install -y"
 # build-essential
-sudo apt-get install -y build-essential
+$INSTALL_CMD build-essential
 # clang
-sudo apt-get install -y clang
+$INSTALL_CMD clang
+# cmake
+$INSTALL_CMD cmake
+# realpath tree
+$INSTALL_CMD realpath tree
 
