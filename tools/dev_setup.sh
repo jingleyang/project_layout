@@ -37,6 +37,5 @@ export PATH="$DEPOT_TOOLS":"$PATH"
 echo "export PATH=$PATH" >> ~/.bashrc
 
 # relogin to init PATH
-
 su - `whoami`
 
