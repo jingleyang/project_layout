@@ -7,8 +7,8 @@
 
 set -x
 # update apt-get
-sudo apt-get update
-INSTALL_CMD="sudo apt-get install -y"
+sudo apt-get update -qq
+INSTALL_CMD="sudo apt-get install -y -qq"
 # build-essential
 $INSTALL_CMD build-essential
 # clang

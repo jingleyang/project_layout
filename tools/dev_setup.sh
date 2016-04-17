@@ -4,18 +4,19 @@ set -x
 
 # install deps_install.sh firstly
 sh -x deps_install.sh
+INSTALL_CMD="sudo apt-get install -y -qq"
 # git svn curl
-sudo apt-get install -y git svn curl exuberant-ctags 
+$INSTALL_CMD git svn curl exuberant-ctags
 # linux perf
-sudo apt-get install -y linux-tools-`uname -r` linux-tools-common
+#INSTALL_CMD linux-tools-`uname -r` linux-tools-common
 # vim
-sudo apt-get install -y vim
+$INSTALL_CMD vim
 # setup vim
 # install moshen/vimconfig
 if [ ! -d ~/.vim/bundle/ ]; then
   (echo set -- -r; curl "https://raw.githubusercontent.com/moshen/vimconfig/master/setup.sh") | bash
 fi
-# install google/vim-codefmt. However it does not work.
+# I would like to install google/vim-codefmt. However it does not work.
 #rm -rf ~/.vimrc
 #cp ./dot.vimrc ~/.vimrc
 
@@ -35,7 +36,4 @@ fi
 # export PATH
 export PATH="$DEPOT_TOOLS":"$PATH"
 echo "export PATH=$PATH" >> ~/.bashrc
-
-# relogin to init PATH
-su - `whoami`
 
