@@ -29,3 +29,7 @@
 
 # output dir
 out/
+
+# configure and Makefile will be generated
+Makefile
+configure
