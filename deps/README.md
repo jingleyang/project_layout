@@ -5,7 +5,7 @@
 This list contains all third party libraries which are used in the project.
 
 ## References Table
-i
+
 1. [gperftools](https://github.com/gperftools/gperftools), 2.5, which is used for tcmalloc and CPU and Heap profile. 17 April, 2016.
 
 1. [depot_tools](https://www.chromium.org/developers/how-tos/install-depot-tools), 00dbccd, which is used to manage checkouts and code reviews. 18 April, 2016
