@@ -1,4 +1,6 @@
 # Project Layout 
+[![Build Status](https://travis-ci.org/jingleyang/project_layout.svg?branch=master)](https://travis-ci.org/jingleyang/project_layout)
+
 This is a demo for project layout. In this demo, several project management technique will be shown.
 
 ## Development Environment
@@ -22,3 +24,4 @@ The Release mode will be striped and debug information will be kept separately.
 ## Third-party
 
 ## Continuous Integration
+[travis-ci](https://travis-ci.org) will be used for CI.
