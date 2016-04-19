@@ -1,4 +1,5 @@
 #!/usr/bin/make
+# run autogen.sh will replace the Makefile
 # copy then modified from
 # https://raw.githubusercontent.com/NewProggie/Cpp-Project-Template/master/Makefile
 # $@ is the name of the file being generated
@@ -13,7 +14,7 @@ RM    := rm -rf
 MKDIR := mkdir -p
 OUT_DIR:=./out
 
-all: Debug Release 
+all: Debug Release
 
 distclean:
 	@ $(SHELL) ./autogen.sh
