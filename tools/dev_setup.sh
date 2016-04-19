@@ -16,6 +16,8 @@ $INSTALL_CMD vim
 if [ ! -d ~/.vim/bundle/ ]; then
   (echo set -- -r; curl "https://raw.githubusercontent.com/moshen/vimconfig/master/setup.sh") | bash
 fi
+echo "set spell spelllang=en_gb" >> ~/.vimrc
+
 # I would like to install google/vim-codefmt. However it does not work.
 #rm -rf ~/.vimrc
 #cp ./dot.vimrc ~/.vimrc
@@ -36,4 +38,11 @@ fi
 # export PATH
 export PATH="$DEPOT_TOOLS":"$PATH"
 echo "export PATH=$PATH" >> ~/.bashrc
+
+
+# end of dev configure
+echo "It is time to relogin:"
+echo "su - `whoami`"
+
+
 
