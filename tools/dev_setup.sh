@@ -8,7 +8,9 @@ INSTALL_CMD="sudo apt-get install -y -qq"
 # git svn curl
 $INSTALL_CMD git svn curl exuberant-ctags
 # linux perf
-#INSTALL_CMD linux-tools-`uname -r` linux-tools-common
+$INSTALL_CMD linux-tools-`uname -r` linux-tools-common
+# valgrind
+$INSTALL_CMD valgrind
 # vim
 $INSTALL_CMD vim
 # setup vim
@@ -43,6 +45,3 @@ echo "export PATH=$PATH" >> ~/.bashrc
 # end of dev configure
 echo "It is time to relogin:"
 echo "su - `whoami`"
-
-
-

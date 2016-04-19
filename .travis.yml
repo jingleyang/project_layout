@@ -1,0 +1,8 @@
+install: cd tools/; sh ./deps_install.sh
+language: cpp
+sudo: required
+dist: trusty
+compiler:
+  - clang
+  - gcc
+script: sh ./autogen.sh; ./configure; make;
