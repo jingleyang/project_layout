@@ -1,4 +1,4 @@
-install: cd tools/; sh ./deps_install.sh
+install: sh ./tools/deps_install.sh
 language: cpp
 sudo: required
 dist: trusty
