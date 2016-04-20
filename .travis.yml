@@ -1,8 +1,8 @@
-install: sh ./tools/deps_install.sh
+install: sh ./tools/deps_install.sh ; sh ./tools/dev_setup.sh
 language: cpp
 sudo: required
 dist: trusty
 compiler:
-  - clang
-  - gcc
+  - clang++
+  - g++
 script: sh ./autogen.sh; ./configure; make;
