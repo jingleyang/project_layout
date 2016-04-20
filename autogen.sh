@@ -5,10 +5,10 @@
 set -x
 OUT_DIR=./out
 
-# default cmake generator
-GEN_TYPE=Ninja
+# default cmake generator # in travis,  CMake was unable to find a build program corresponding to "Ninja"
+#GEN_TYPE=Ninja
 # open this type to get a makefile
-#GEN_TYPE=make
+GEN_TYPE=make
 
 #update GEN_TYPE
 if [ ! -z "$1" ]; then
